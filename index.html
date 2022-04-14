@@ -10,7 +10,7 @@
         // init Branch
         // branch.init('key_live_jkXQEM4xnfXgEkyke50rIicftug2ITK5');
         branch.init('key_live_jkXQEM4xnfXgEkyke50rIicftug2ITK5', function (err, data) {
-            console.log("error? ", err, "\ndata: ", data);
+            console.log(data);
         });
 
         var linkData = {
@@ -31,14 +31,14 @@
         };
 
         branch.link(linkData, function (err, link) {
-            console.log("error? ", err, "\nlink:", link);
+            console.log(link);
         });
     </script>
 
 </head>
 
 <body>
-    <div id="log"></div>
+    <div id="log">console log should display here!</div>
 </body>
 
 </html>
